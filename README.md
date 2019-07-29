@@ -1,2 +1,2 @@
 # blog
-Guoran Developer Team's blog
+Guoran Development Team's blog
