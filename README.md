@@ -178,7 +178,7 @@ code-push access-key rm <accessKye> 删除某个 access-key
 -------
 
 
-###3.在CodePushServer 注册app
+### 3.在CodePushServer 注册app
  由于CodePush的iOS与Android的双系统是分开管理热更新的，那么为了区分这两个平台的版本管理，将在应用后面板添加 <-platform>
 
 ```shell  code-push app add 工程名-android #android版
@@ -194,7 +194,7 @@ Successfully added the "TestRNUpdateDemo" app, along with the   following defaul
 #分别获得iOS和安卓的Deployment Key，推送的时候通过key将app和服务器端关联，推送是分开的
 
 ```
-###常见CodePush命令
+### 常见CodePush命令
  
 
 ```shell
@@ -436,7 +436,7 @@ const styles = StyleSheet.create({
 
 ```
 
-###5.  发布一个应用更新到服务器
+### 5.  发布一个应用更新到服务器
 
 打包bundle结束后，就可以通过CodePush发布更新了。在控制台输入
 ` 
