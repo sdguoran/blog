@@ -459,14 +459,14 @@ code-push release<应用名称> <Bundles所在目录> <对应的应用版本>
 ### 只更新25%的用户
 `code-push release-react MyApp-Android android --rollout 25% --dev true
 `
-### 只更新1.0版本的客户端
+### 只更新1.0.0版本的客户端
 `code-push release-react MyApp-Android android --targetBinaryVersion "~1.0.0"`
 	 
 	 
 ##### 注意
 1. CodePush默认是更新 staging 环境的，如果是staging，则不需要填写 deploymentName。
 2. mandatory为true时强制，客户端会更新，默认false 不强制更新。
-3. targetBinaryVersion  版本号指的是当前需要更新的版本，比如客户端安装的是1.0.0版本，targetBinaryVersion填写为1.0.0，那么只有1.0客户端会更新此版本，不要误解。
+3. targetBinaryVersion  版本号指的是当前需要更新的版本，比如客户端安装的是1.0.0版本，targetBinaryVersion填写为1.0.0，那么只有1.0.0客户端会更新此版本，不要误解。
 4. 版本号最好为三位数，如1.0.0，两位数可能会报错
 5. 如果本次推送的js与上个版本的js没有变化，推送成功则会报错。
  ![](https://raw.githubusercontent.com/crazycodeboy/RNStudyNotes/master/React%20Native%E5%BA%94%E7%94%A8%E9%83%A8%E7%BD%B2%E3%80%81%E7%83%AD%E6%9B%B4%E6%96%B0-CodePush%E6%9C%80%E6%96%B0%E9%9B%86%E6%88%90%E6%80%BB%E7%BB%93/images/%E5%AF%B9%E5%BA%94%E4%B8%80%E4%B8%AA%E7%89%88%E6%9C%AC%E6%9C%89%E4%B8%A4%E4%B8%AAbundle%E7%9A%84md5%E5%AE%8C%E5%85%A8%E4%B8%80%E6%A0%B7.png)
